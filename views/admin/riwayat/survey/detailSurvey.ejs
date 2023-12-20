@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detail Surat Izin Survey dan Pengambilan Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/table.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="hw-100">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-end" href=""><img src="/images/mortarboard2.png" class="w-75 text-end"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-start">
+                        <a class="nav-link active text-white" aria-current="page" href="/homeAdmin">Departemen Sistem
+                            Informasi
+                            Universitas Andalas</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-5 pe-5 mb-2 mb-lg-0">
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-white dosen aria-current=" page" href="/dosenViews">Dosen</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-white mahasiswa" href="/mahasiswaViews">Mahasiswa</a>
+                        </li>
+                        <li class="nav-item dropdown ps-5">
+                            <a class="nav-link text-white dropdown-toggle profile" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" id="username_admin">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="/profileAdminViews">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="/images/profile.png" alt="">
+                                                </div>
+                                                <div class="col-8 text-start text-white">
+                                                    Profil
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/logoutAdmin">
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="/images/logout.png" alt="">
+                                                </div>
+                                                <div class="col-8 text-white">
+                                                    Logout
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h4 class="ps-5 pt-5">Detail Surat Izin Survey dan Pengambilan Data</h4>
+    <div class="ps-5 pe-5 pt-3">
+        <div class="row">
+            <div class="col-8">
+                Permohonan surat untuk keperluan survey dan pengambilan data salah satu mata kuliah. Mahasiswa dapat
+                mengajukan surat jika telah mendapatkan persetujuan dari dosen pengampu.
+            </div>
+            <div class="col-4 text-end">
+                <a href="/riwayatIzinSurveyViews"><button type="button" class="btn btn-secondary">Kembali</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="detailSurat border pe-5 ps-5 pt-4 m-5 bg-white rounded-3">
+        <div class="anggota1">
+            <h6 class="fw-semibold">Anggota 1</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa1">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa1">
+                <!-- 2111522021 -->
+            </div>
+        </div>
+        <br>
+        <div class="anggota2">
+            <h6 class="fw-semibold">Anggota 2</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa2">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa2">
+                <!-- 2111522021 -->
+            </div>
+        </div>
+        <br>
+        <div class="anggota3">
+            <h6 class="fw-semibold">Anggota 3</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa3">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa3">
+                <!-- 2111522021 -->
+            </div>
+        </div>
+        <br>
+        <div class="anggota4">
+            <h6 class="fw-semibold">Anggota 4</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa4">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa4">
+                <!-- 2111522021 -->
+            </div>
+        </div>
+        <br>
+        <div class="anggota5">
+            <h6 class="fw-semibold">Anggota 5</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa5">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa5">
+                2111522021
+            </div>
+        </div>
+        <br>
+        <div class="anggota6">
+            <h6 class="fw-semibold">Anggota 6</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa6">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa6">
+                <!-- 2111522021 -->
+            </div>
+        </div>
+        <br>
+        <div class="anggota7">
+            <h6 class="fw-semibold">Anggota 7</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa7">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa7">
+                <!-- 2111522021 -->
+            </div>
+        </div>
+        <br>
+        <div class="anggota8">
+            <h6 class="fw-semibold">Anggota 8</h6>
+            <label for="" class="pb-2">Nama Lengkap</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 mb-3 border rounded-3" id="nama_mahasiswa8">
+                <!-- nadini -->
+            </div>
+            <label for="" class="pb-2">NIM</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nim_mahasiswa8">
+                <!-- 2111522021 -->
+            </div>
+        </div>
+        <br>
+        <div class="dosenPengampu">
+            <label for="" class="pb-2">Dosen Pengampu</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="nama_dosen">
+                <!-- Husnil Kamil, M.T -->
+            </div>
+        </div>
+        <br>
+        <div class="mataKuliah">
+            <label for="" class="pb-2">Mata Kuliah</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="mata_kuliah">
+                <!-- Enterprise Resource Planning -->
+            </div>
+        </div>
+        <br>
+        <div class="instansiTujuan">
+            <label for="" class="pb-2">Instansi Tujuan</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" id="instansi_tujuan">
+                <!-- Dinas Kominfo Padang -->
+            </div>
+        </div>
+        <br>
+        <div class="tujuanSurat">
+            <label for="" class="pb-2">Tujuan Surat</label>
+            <div class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3">
+                Permohonan Izin Survey dan Pengambilan Data
+            </div>
+        </div>
+        <br>
+        <div class="mb-5 d-flex justify-content-center">
+            <button type="button" class="btn btn-generate btn-success btn-sm"
+                id="btn-generate-izin-survey">Generate</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="/javascripts/admin/index2.js"></script>
+    <script src="/javascripts/admin/riwayat/survey/detailIzinSurvey.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #429E72;
+}
+
+.dropdown-menu, .bg-dropdown {
+    background-color: #147167;
+}
+
+.dosen:hover{
+    text-decoration: underline;
+}
+
+.mahasiswa:hover{
+    text-decoration: underline;
+}
+
+.profile:hover{
+    text-decoration: underline;
+}

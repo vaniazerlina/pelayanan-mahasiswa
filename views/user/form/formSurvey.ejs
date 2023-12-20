@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Surat Izin Survey dan Pengambilan Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/table.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="hw-100">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-end" href=""><img src="/images/mortarboard2.png" class="w-75 text-end"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-start">
+                        <a class="nav-link active text-white" aria-current="page" href="/homeMahasiswa">Departemen
+                            Sistem Informasi
+                            Universitas Andalas</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-5 pe-5 mb-2 mb-lg-0">
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-white dosen aria-current=" page"
+                                href="/riwayatMahasiswa">Riwayat</a>
+                        </li>
+                        <li class="nav-item dropdown ps-5">
+                            <a class="nav-link text-white dropdown-toggle profile" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" id="nim_mahasiswa">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="/profileMhs">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="/images/profile.png" alt="">
+                                                </div>
+                                                <div class="col-8 text-start text-white">
+                                                    Profil
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/logoutMahasiswa">
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="/images/logout.png" alt="">
+                                                </div>
+                                                <div class="col-8 text-white">
+                                                    Logout
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h4 class="ps-5 pt-5">Form Surat Izin Survey dan Pengambilan Data</h4>
+    <div class="ps-5 pe-5 pt-3">
+        <div class="row">
+            <div class="col-8">
+                Permohonan surat untuk keperluan survey dan pengambilan data salah satu mata kuliah. Mahasiswa dapat
+                mengajukan surat jika telah mendapatkan persetujuan dari dosen pengampu.
+            </div>
+            <div class="col-4 text-end">
+                <a href="/homeMahasiswa"><button type="button" class="btn btn-secondary">Kembali</button></a>
+            </div>
+        </div>
+    </div>
+
+    <form>
+        <div class="detailSurat border pe-5 ps-5 pt-4 m-5 bg-white rounded-3">
+            <div class="anggota1">
+                <h6 class="fw-semibold">Anggota 1</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota1">anggota 1</label>
+                    <select class="form-select" id="inputAnggota1" required>
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="anggota2">
+                <h6 class="fw-semibold">Anggota 2</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota2">anggota 2</label>
+                    <select class="form-select" id="inputAnggota2">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="anggota3">
+                <h6 class="fw-semibold">Anggota 3</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota3">anggota 3</label>
+                    <select class="form-select" id="inputAnggota3">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="anggota4">
+                <h6 class="fw-semibold">Anggota 4</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota4">anggota 4</label>
+                    <select class="form-select" id="inputAnggota4">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="anggota5">
+                <h6 class="fw-semibold">Anggota 5</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota5">anggota 5</label>
+                    <select class="form-select" id="inputAnggota5">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="anggota6">
+                <h6 class="fw-semibold">Anggota 6</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota6">anggota 6</label>
+                    <select class="form-select" id="inputAnggota6">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="anggota7">
+                <h6 class="fw-semibold">Anggota 7</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota7">anggota 7</label>
+                    <select class="form-select" id="inputAnggota7">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="anggota8">
+                <h6 class="fw-semibold">Anggota 8</h6>
+                <label for="" class="pb-2">Nama Lengkap</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputAnggota8">anggota 8</label>
+                    <select class="form-select" id="inputAnggota8">
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="dosenPengampu">
+                <label for="" class="pb-2">Dosen Pengampu</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="dosen_pengampu">Nama Dosen Pengampu</label>
+                    <select class="form-select" id="dosen_pengampu" required>
+                        <option value="" selected></option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="mataKuliah">
+                <label for="mata_kuliah" class="pb-2">Mata Kuliah</label>
+                <input type="text" placeholder="Masukkan Nama Mata Kuliah"
+                    class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" required id="mata_kuliah">
+            </div>
+            <br>
+            <div class="penerima_tujuan">
+                <label for="" class="pb-2">Instansi Tujuan atau Penerima Surat</label>
+                <input type="text" placeholder="Masukkan Instansi Tujuan atau Penerima Surat"
+                    class="isiNama w-100 bg-secondary bg-opacity-25 p-2 border rounded-3" required id="penerima_tujuan">
+            </div>
+            <br>
+            <div class="button d-flex justify-content-end mt-5 mb-5">
+                <div class="">
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-success" id="btn-reset">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="/javascripts/mahasiswa/index.js"></script>
+    <script src="/javascripts/mahasiswa/form/formIzinSurvey.js"></script>
+</body>
+
+</html>

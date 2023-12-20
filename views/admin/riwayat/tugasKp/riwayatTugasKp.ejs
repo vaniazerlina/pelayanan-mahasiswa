@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riwayat Surat Tugas Kerja Praktek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/table.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="hw-100">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-end" href=""><img src="/images/mortarboard2.png" class="w-75 text-end"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-start">
+                        <a class="nav-link active text-white" aria-current="page" href="/homeAdmin">Departemen
+                            Sistem Informasi
+                            Universitas Andalas</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-5 pe-5 mb-2 mb-lg-0">
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-white dosen aria-current=" page" href="/dosenViews">Dosen</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <a class="nav-link text-white mahasiswa" href="/mahasiswaViews">Mahasiswa</a>
+                        </li>
+                        <li class="nav-item dropdown ps-5">
+                            <a class="nav-link text-white dropdown-toggle profile" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" id="username_admin">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="/profileAdminViews">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="/images/profile.png" alt="">
+                                                </div>
+                                                <div class="col-8 text-start text-white">
+                                                    Profil
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/logoutAdmin">
+                                        <div class="container text-center">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="/images/logout.png" alt="">
+                                                </div>
+                                                <div class="col-8 text-white">
+                                                    Logout
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h4 class="ps-5 pt-5">Riwayat Surat Tugas Kerja Praktek</h4>
+    <div class="row">
+        <div class="col-8">
+            <p class="ps-5">Berikut adalah riwayat surat tugas kerja praktek </p>
+        </div>
+        <div class="col-4 d-flex justify-content-center mb-4">
+            <a href="/riwayatIzinKpViews">
+                <button type="button" class="btn btn-outline-secondary">kembali</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="tabel pe-5 ps-5 pb-3 pt-2">
+        <table class="table">
+            <thead class="border bg-table">
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">No Surat Izin</th>
+                    <th scope="col">Anggota 1</th>
+                    <th scope="col">File Surat</th>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">Instansi</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Tindakan</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white" id="tabelTugasKp">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="/javascripts/admin/index2.js"></script>
+    <script src="/javascripts/admin/riwayat/tugasKp/tugasKp.js"></script>
+
+</body>
+
+</html>
